@@ -241,7 +241,7 @@ Funnel::Funnel(const ActionOptions& ao):
 
   if(walkers_mpi) {
 //    if(comm.Get_rank()==0 && multi_sim_comm.Get_rank()==0) {
-	if(comm.Get_rank()==0){ //Gromacs changed from -multi to -multidir, does it work? The Emperor protects
+    if(comm.Get_rank()==0) { //Gromacs changed from -multi to -multidir, does it work? The Emperor protects
       if(!do_exist) {
         createBIAS(RCYL, ZCC, ALPHA, KAPPA, MINS, MAXS, NBINS, NBINZ, safety, sphere, slope, funcl, file);
       }
